@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PlatformBorder
+  - platform
+  - Points
+  - Circle
+  - Pain
+  - Pain2
+  - Square
+  - Square
+  - Square
+  - Square
+  - PlusPoints
+  - Ground
+  - Square
+  - Square
+  - Square
+  - Square
+  - Square
+  - Square
+  - Square
+  - Square
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3048554523
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 2831799465
+    locked: 0
+  - name: 2
+    uniqueID: 1911028635
+    locked: 0
