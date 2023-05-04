@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlatformControl : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class PlatformControl : MonoBehaviour
         {
             CircleMovement circle = GetComponentInChildren<CircleMovement>();
             circle.Push(pushDir);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }

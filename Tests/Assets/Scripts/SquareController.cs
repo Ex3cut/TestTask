@@ -8,8 +8,8 @@ public class SquareController : MonoBehaviour
 {
     [SerializeField] private float jumpForce;
     private int doubleJump = 2;
-    [SerializeField] Text allPoints;
-    int allPointsInt;
+    public Speed allPoints;
+    public float allPointsFloat;
 
     private int jumped;
 
@@ -18,6 +18,7 @@ public class SquareController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
     }
 
     private void Update()
@@ -28,7 +29,7 @@ public class SquareController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumped++;
         }
-        allPoints.text = allPointsInt.ToString();
+        allPoints.scoreText.text = allPointsFloat.ToString();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -46,7 +47,7 @@ public class SquareController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PlusPoints"))
         {
-            allPointsInt += 10;
+            allPointsFloat += 10;
             Destroy(collision.gameObject);
         }
     }
